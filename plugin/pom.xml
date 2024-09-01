@@ -258,10 +258,6 @@
                                     <shadedPattern>dev.cerus.mapads.thirdparty.hikaricp</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <pattern>net.kyori.adventure</pattern>
-                                    <shadedPattern>dev.cerus.mapads.thirdparty.adventure</shadedPattern>
-                                </relocation>
-                                <relocation>
                                     <pattern>net.wesjd.anvilgui</pattern>
                                     <shadedPattern>dev.cerus.mapads.thirdparty.anvilgui</shadedPattern>
                                 </relocation>
