@@ -19,7 +19,7 @@ public class HelpBook {
     public static void init(final HelpBookConfiguration configuration) {
         HelpBook.pages = new ArrayList<>();
         for (final String page : configuration.getPages()) {
-            final Component component = MiniMessage.get().parse(page);
+            final Component component = MiniMessage.miniMessage().deserialize(page);
             final BaseComponent[] serialized = BungeeComponentSerializer.get().serialize(component);
             HelpBook.pages.add(serialized);
         }

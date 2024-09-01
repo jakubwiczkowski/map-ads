@@ -40,6 +40,10 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
         <repository>
+            <id>sonatype-oss-snapshots1</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
             <id>rosewood-repo</id>
             <url>https://repo.rosewooddev.io/repository/public/</url>
         </repository>
@@ -75,7 +79,7 @@
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-minimessage</artifactId>
-            <version>4.1.0-SNAPSHOT</version>
+            <version>4.17.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -104,12 +108,15 @@
             <version>3.2.4</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
-            <groupId>com.github.FaceSlap02</groupId>
-            <artifactId>AquaCoreAPI</artifactId>
+            <artifactId>com.github.FaceSlap02</artifactId>
+            <groupId>AquaCoreAPI</groupId>
             <version>1.0.0</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/AquaCoreAPI.jar</systemPath>
         </dependency>
+
 
         <!-- Used for nms stuff -->
         <dependency>
